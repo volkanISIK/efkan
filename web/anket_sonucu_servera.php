@@ -50,7 +50,7 @@
 
 
 <?php
-header('Location: http://localhost/');
+header('Location: https://efkanhoca.herokuapp.com/');
 exit;
 ?>
 
