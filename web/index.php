@@ -47,7 +47,9 @@
                 <select name="kitap_secme" id="kitap" onchange="addTestOption()" class="form-select" aria-label="Default select example">
                     <option value="yok"  selected>-------</option>
                     
-                    <?php   
+                    <?php  
+                    
+                        
                         if(mysqli_num_rows($result_kitaplar) > 0){
                         
                             while($row = mysqli_fetch_assoc($result_kitaplar)){

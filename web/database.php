@@ -13,4 +13,6 @@ $result_kitaplar = mysqli_query($conn, $sql);
 $sql = "SELECT test_adi,kitabi,soru_sayisi,konusu FROM testler";
 $result_testler = mysqli_query($conn,$sql);
 
+
+
 ?>
