@@ -24,26 +24,35 @@
             // $sql = sprintf($sql,$kitabi,$testi,$konusu,$i,$ad,$_POST[$i]);
         
             if (mysqli_query($conn, $sql)) {
-                echo "New record created successfully";
-              } else {
+                echo "<h4>Anket Gönderildi</h4><br>";
+                
+                
+            }
+              else {
                 echo mysqli_error($conn);
                 echo "<br>";
                 echo $sql;
-                echo "<br>";
-                
+                die();
+              
               }
             
         }else{
             continue;
         }
     }
+    sleep(5);
     mysqli_close($conn);
+
+    
 ?>
 
 
 
 
-
+<?php
+header('Location: http://localhost/');
+exit;
+?>
 
 
 
